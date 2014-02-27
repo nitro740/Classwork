@@ -26,6 +26,12 @@ public class GuessingGame{
             System.out.println("Correct, congratulations!");
             break;
         }
+        else if (usrnum > numToGuess) {
+            System.out.println("That number is too high");
+        }
+        else if (usrnum >= (10000)) {
+            System.out.println("Having fun typing random numbers in a random order?");
+        }
         else if (usrnum != numToGuess) {
             System.out.println("Incorrect, try again.");
             
