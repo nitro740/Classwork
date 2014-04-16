@@ -21,23 +21,21 @@ public class AdventureTest {
 			
 			String t1cmd=scn.nextLine();
 			
-			if (t1cmd.compareToIgnoreCase("blacksmith")==0){
+			if (t1cmd.compareToIgnoreCase("blacksmith")==0) {
 				System.out.println("You chose to visit the blacksmith.");
 				
 				Talk(); System.out.println("the blacksmith?");
 				System.out.println("Yes or No");
 				
 				String t1blksyn=scn.nextLine();
-				if (t1blksyn.compareToIgnoreCase("yes")==0){
+				if (t1blksyn.compareToIgnoreCase("yes")==0) {
 					System.out.println("The blacksmith has many things for sale,");
 					System.out.println("including armor upgrades, weapon upgrades, new armor,");
 					System.out.println("and new weapons. What would you like to buy?");
+				} else if (t1blksyn.compareToIgnoreCase("no")==0) {
+
 				}
-				else if (t1blskyn.compareToIgnoreCase("no")==0){
-					
-				}
-			}
-			else if (startloc.compareToIgnoreCase("market")==0){
+			} else if (startloc.compareToIgnoreCase("market")==0) {
 				System.out.println("You chose to visit the market.");
 				MarketIn();
 				
@@ -46,7 +44,7 @@ public class AdventureTest {
 				System.out.println("the potion merchant, the horse merchant, or just leave?");
 				
 				String t1mktcmd=scn.nextLine();
-				if (t1mktcmd.compareToIgnoreCase("the weapon merchant")==0){
+				if (t1mktcmd.compareToIgnoreCase("the weapon merchant")==0) {
 					Talk(); System.out.println("the weapon merchant, yes or no?");
 					
 					String t1wmcmd=scn.nextLine();
@@ -95,7 +93,7 @@ public class AdventureTest {
 		System.out.println("What would you like to buy?");
 	}
 	public static void WeaponMerchantWares(){
-		System.out.println("The armor merchant has many things for sale,");
+		System.out.println("The weapon merchant has many things for sale,");
 		System.out.println("including longswords, shortswords, broadswords, daggers, knives,");
 		System.out.println("handaxes, battleaxes, poleaxes, spears, halberds,");
 		System.out.println("maces, warhammers, polehammers, shortbows, longbows,");
